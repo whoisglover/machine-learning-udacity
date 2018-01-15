@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>dog_app-Copy1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>dog_app</title><script src="https://unpkg.com/jupyter-js-widgets@2.0.*/dist/embed.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13726,6 +13726,12 @@ Epoch 20/20
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
 <p><strong>Answer:</strong> 
 I am running this code on an amazon aws virtual machine so it is not very easy to insert images from my computer. Instead in the cell above I ran the algorithm on 5 random humans and 5 random dogs from the original dataset and visualized the results.</p>
+<p>Three possible points of improvement:</p>
+<ul>
+<li>Making the network even deeper with more layers, and thus more filters, could increase performeance</li>
+<li>Creating a larger network would make it a good idea to use some amount of dropout between the layers, I would start at 20% and move up to 50% to see what the right amount would be for this setup</li>
+<li>I think training with more epochs would help the model generalize better, I avoided this initially for time constraints (each epoch took about 1.5 minutes). If I was training this model mores seriously that time would be worth the improved performance. </li>
+</ul>
 
 </div>
 </div>
